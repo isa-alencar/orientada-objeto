@@ -68,10 +68,7 @@ public class Fracao {
 
     public Fracao getFracaoIrredutivel() {
       int mdc = Aritmetica.mdc(this.numerador, this.denominador);
-      //if(mdc!=1){
           Fracao irredutivel = new Fracao(this.numerador/mdc, this.denominador/mdc);
           return irredutivel;
-      //}
-      //else {}
     }
 }
